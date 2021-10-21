@@ -1,2 +1,5 @@
 # Calculator-app
-Basic Calculator app created on android studio using Java.
+A Basic Calculator Application.
+## Technology Stack used to create this application :
+### Android Studio  
+### Java
