@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (TextUtils.isEmpty(number.getText().toString())) {
-                    Toast.makeText(MainActivity.this, "Enter a number please!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Please Enter a number: ", Toast.LENGTH_SHORT).show();
                 } else {
                     String temp = number.getText().toString();
                     num1 = Double.parseDouble(temp);
@@ -108,9 +108,10 @@ public class MainActivity extends AppCompatActivity {
                 num2 = 0d;
                 ans = 0d;
                 action = "None";
+               
+                state.setText("");
                 number.setText("");
                 answer.setText("");
-                state.setText("");
             }
         });
         
@@ -299,13 +300,13 @@ public class MainActivity extends AppCompatActivity {
                             ans = 0d;
                             break;
                         case "Add":
-                            ans = num1 + num2;
+                            ans =  num2+num1 ;
                             break;
                         case "Subtract":
                             ans = num1 - num2;
                             break;
                         case "Multiply":
-                            ans = num1 * num2;
+                            ans =  num2*num1 ;
                             break;
                         case "Divide":
                             ans = num1 / num2;
@@ -319,8 +320,9 @@ public class MainActivity extends AppCompatActivity {
                     }
                     temp = Double.toString(ans);
                     answer.setText(temp);
-                    number.setText(temp);
                     state.setText(temp);
+                    number.setText(temp);
+                    
                     num1 = ans;
                     num2 = 0d;
                     ans = 0d;
