@@ -108,10 +108,9 @@ public class MainActivity extends AppCompatActivity {
                 num2 = 0d;
                 ans = 0d;
                 action = "None";
-               
-                state.setText("");
                 number.setText("");
                 answer.setText("");
+                state.setText("");
             }
         });
         
@@ -300,13 +299,13 @@ public class MainActivity extends AppCompatActivity {
                             ans = 0d;
                             break;
                         case "Add":
-                            ans =  num2+num1 ;
+                            ans = num2 + num1 ;
                             break;
                         case "Subtract":
                             ans = num1 - num2;
                             break;
                         case "Multiply":
-                            ans =  num2*num1 ;
+                            ans = num2 * num1 ;
                             break;
                         case "Divide":
                             ans = num1 / num2;
@@ -320,9 +319,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                     temp = Double.toString(ans);
                     answer.setText(temp);
-                    state.setText(temp);
                     number.setText(temp);
-                    
+                    state.setText(temp);
                     num1 = ans;
                     num2 = 0d;
                     ans = 0d;
@@ -331,5 +329,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
 }
