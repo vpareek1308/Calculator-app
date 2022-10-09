@@ -124,8 +124,9 @@ public class MainActivity extends AppCompatActivity {
                     String temp = number.getText().toString();
                     num1 = Double.parseDouble(temp);
                     action = "Multiply";
-                    number.setText("");
                     state.setText(temp);
+                    number.setText("");
+                    
                 }
             }
         });
@@ -134,9 +135,9 @@ public class MainActivity extends AppCompatActivity {
         digit9Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String temp = number.getText().toString();
-                temp = temp + '9';
-                number.setText(temp);
+                String pc = number.getText().toString();
+                pc = pc + '9';
+                number.setText(pc);
             }
         });
 
@@ -144,9 +145,9 @@ public class MainActivity extends AppCompatActivity {
         digit8Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String temp = number.getText().toString();
-                temp = temp + '8';
-                number.setText(temp);
+                String tempr = number.getText().toString();
+                tempr = tempr + '8';
+                number.setText(tempr);
             }
         });
 
@@ -154,9 +155,9 @@ public class MainActivity extends AppCompatActivity {
         digit7Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String temp = number.getText().toString();
-                temp = temp + '7';
-                number.setText(temp);
+                String tempe = number.getText().toString();
+                tempe = tempe + '7';
+                number.setText(tempe);
             }
         });
 
@@ -194,9 +195,9 @@ public class MainActivity extends AppCompatActivity {
         digit3Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String temp = number.getText().toString();
-                temp = temp + '3';
-                number.setText(temp);
+                String tempx = number.getText().toString();
+                tempx = tempx + '3';
+                number.setText(tempx);
             }
         });
 
@@ -299,13 +300,13 @@ public class MainActivity extends AppCompatActivity {
                             ans = 0d;
                             break;
                         case "Add":
-                            ans = num2 + num1 ;
+                            ans = num1+ num2  ;
                             break;
                         case "Subtract":
                             ans = num1 - num2;
                             break;
                         case "Multiply":
-                            ans = num2 * num1 ;
+                            ans = num1 * num2 ;
                             break;
                         case "Divide":
                             ans = num1 / num2;
