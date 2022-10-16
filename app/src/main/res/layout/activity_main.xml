@@ -26,7 +26,7 @@
         android:layout_marginBottom="15dp"
         android:text="/"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#1E78C8"
+        android:textColor="#1E78C2"
         app:backgroundTint="#3C5564"
         app:layout_constraintBottom_toTopOf="@+id/multiplyButton"
         app:layout_constraintStart_toEndOf="@+id/moduloButton" />
@@ -83,7 +83,7 @@
         android:text="*"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#1E78C8"
-        app:backgroundTint="#3C5564"
+        app:backgroundTint="#3C5464"
         app:layout_constraintBottom_toTopOf="@+id/subtractButton"
         app:layout_constraintStart_toEndOf="@+id/digit9Button" />
 
