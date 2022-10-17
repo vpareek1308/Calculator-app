@@ -43,6 +43,29 @@ public class MainActivity extends AppCompatActivity {
     private Double ans = 0d;
     private String action = "None";
 
+    static int factorial(int n)
+    {
+    int res = 1, i;
+    for (i=2; i<=n; i++)
+    res *= i;
+    return res;
+    }
+
+    static double medianCal(int  n,double in[])
+    {
+        double m=0;	
+        if(n%2==1)
+        {
+            m=in[((n+1)/2)-1];  
+        }
+        else
+        {
+            m=(in[n/2-1]+in[n/2])/2; 
+        }
+        return m;
+    }
+}
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -291,7 +314,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (TextUtils.isEmpty(number.getText().toString())) {
-                    Toast.makeText(MainActivity.this, "Enter a number please!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Enter a number here!", Toast.LENGTH_SHORT).show();
                 } else {
                     String temp = number.getText().toString();
                     num2 = Double.parseDouble(temp);
