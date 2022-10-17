@@ -42,29 +42,64 @@ public class MainActivity extends AppCompatActivity {
     private Double num2 = 0d;
     private Double ans = 0d;
     private String action = "None";
-
-    static int factorial(int n)
-    {
-    int res = 1, i;
-    for (i=2; i<=n; i++)
-    res *= i;
-    return res;
-    }
-
-    static double medianCal(int  n,double in[])
-    {
-        double m=0;	
-        if(n%2==1)
-        {
-            m=in[((n+1)/2)-1];  
-        }
-        else
-        {
-            m=(in[n/2-1]+in[n/2])/2; 
-        }
-        return m;
-    }
+  
 }
+static int factorial(int n)
+{
+int res = 1, i;
+for (i=2; i<=n; i++)
+res *= i;
+return res;
+}
+
+static double medianCal(int  n,double in[])
+{
+    double m=0;	
+    if(n%2==1)
+    {
+        m=in[((n+1)/2)-1];  
+    }
+    else
+    {
+        m=(in[n/2-1]+in[n/2])/2; 
+    }
+    return m;
+}
+
+static void meanCal(int n,int in[])
+{
+
+double sum=0;
+for(int i=0;i<n;i++) 
+{
+    
+    sum=sum+in[i];
+}
+    System.out.println("Mean :"+sum/n);  
+}
+
+static int mode(int a[],int n) {
+    int maxValue = 0, maxCount = 0, i, j;
+
+    for (i = 0; i < n; ++i) {
+       int count = 0;
+       for (j = 0; j < n; ++j) {
+          if (a[j] == a[i])
+          ++count;
+       }
+
+       if (count > maxCount) {
+          maxCount = count;
+          maxValue = a[i];
+       }
+    }
+    return maxValue;
+ }
+ public static void main(String args[]){
+    int n = 5;
+    int a[] = {0,6,7,2,7};
+    System.out.println("Mode ::"+mode(a,n));
+ }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
