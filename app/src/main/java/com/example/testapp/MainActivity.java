@@ -83,7 +83,13 @@ static void animal(string dog, string doggy ){
 static void snake(int al, int bl){
     return 3+8;
 }
+static ram(int a){
+    return 1+8;
+}
 
+static raat(int axis){
+    return axis;
+}
 static void meanCal(int n,int in[])
 {
 
