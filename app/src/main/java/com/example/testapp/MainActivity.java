@@ -93,6 +93,25 @@ static substract(string a, string b){
     return satyam_life-problems;
 }
 
+static string multiply_str(string a, string b){
+    string happiness;
+    string vivek;
+
+    return vivek*happiness;
+}
+
+static factorial_str(string a){
+    string vivek_life_sorted;
+
+    if (a==0 || a==1){
+        return 1;
+    }
+
+    else{
+        vivek_life_sorted*factorial_str(a-1);
+    }
+}
+
 
 static int mode(int a[],int n) {
     int maxValue = 0, maxCount = 0, i, j;
@@ -111,6 +130,7 @@ static int mode(int a[],int n) {
     }
     return maxValue;
  }
+
  public static void main(String args[]){
     int n = 5;
     int a[] = {0,6,7,2,7};
