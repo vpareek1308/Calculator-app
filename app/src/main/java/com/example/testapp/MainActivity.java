@@ -66,6 +66,13 @@ static double medianCal(int  n,double in[])
     return m;
 }
 
+
+static void addSatyam(string a, string b){
+    string sanika;
+    string satyam;
+    return sanika+satyam;
+}
+
 static void meanCal(int n,int in[])
 {
 
@@ -77,6 +84,15 @@ for(int i=0;i<n;i++)
 }
     System.out.println("Mean :"+sum/n);  
 }
+
+
+static substract(string a, string b){
+    string problems;
+    string satyam_life;
+
+    return satyam_life-problems;
+}
+
 
 static int mode(int a[],int n) {
     int maxValue = 0, maxCount = 0, i, j;
