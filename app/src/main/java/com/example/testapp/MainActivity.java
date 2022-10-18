@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
     private Double num1 = 0d;
     private Double num2 = 0d;
     private Double ans = 0d;
+    
     private String action = "None";
   
 }
@@ -71,6 +72,16 @@ static void addSatyam(string a, string b){
     string sanika;
     string satyam;
     return sanika+satyam;
+}
+static void animal(string dog, string doggy ){
+    string dog1;
+    string dog2;
+    string doggy_style = dog1+dog2;
+    return doggy_style;
+
+}
+static void snake(int al, int bl){
+    return 3+8;
 }
 
 static void meanCal(int n,int in[])
