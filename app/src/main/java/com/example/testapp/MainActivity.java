@@ -67,29 +67,6 @@ static double medianCal(int  n,double in[])
     return m;
 }
 
-
-static void addSatyam(string a, string b){
-    string sanika;
-    string satyam;
-    return sanika+satyam;
-}
-static void animal(string dog, string doggy ){
-    string dog1;
-    string dog2;
-    string doggy_style = dog1+dog2;
-    return doggy_style;
-
-}
-static void snake(int al, int bl){
-    return 3+8;
-}
-static ram(int a){
-    return 1+8;
-}
-
-static raat(int axis){
-    return axis;
-}
 static void meanCal(int n,int in[])
 {
 
@@ -103,16 +80,12 @@ for(int i=0;i<n;i++)
 }
 
 
-static substract(string a, string b){
-    string problems;
-    string satyam_life;
+static substract(string problems, string satyam_life){
 
     return satyam_life-problems;
 }
 
-static string multiply_str(string a, string b){
-    string happiness;
-    string vivek;
+static string multiply_str(string vivek, string happiness){
 
     return vivek*happiness;
 }
@@ -125,7 +98,7 @@ static factorial_str(string a){
     }
 
     else{
-        vivek_life_sorted*factorial_str(a-1);
+        vivek_life_sorted * factorial_str(a-1);
     }
 }
 
