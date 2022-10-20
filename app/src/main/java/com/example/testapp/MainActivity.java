@@ -46,25 +46,6 @@ public class MainActivity extends AppCompatActivity {
   
 }
 
- public static int square(int a) {
-     return a*a;
- }
-
-
- public static int double(int a) {
-     return a+a;
- }
-
-
- public static int one(int a) {
-     return a/a;
- }
-
-
- public static int zero(int a) {
-     return a-a;
- }
-
  public static void main(String args[]){
     int n = 5;
     int a[] = {0,6,7,2,7};
