@@ -46,22 +46,22 @@ public class MainActivity extends AppCompatActivity {
   
 }
 
- public static int function(int a) {
+ public static int square(int a) {
      return a*a;
  }
 
 
- public static int function1(int a) {
+ public static int double(int a) {
      return a+a;
  }
 
 
- public static int function2(int a) {
+ public static int one(int a) {
      return a/a;
  }
 
 
- public static int function(int a) {
+ public static int zero(int a) {
      return a-a;
  }
 
