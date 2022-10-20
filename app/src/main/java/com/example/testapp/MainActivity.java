@@ -46,45 +46,6 @@ public class MainActivity extends AppCompatActivity {
   
 }
 
-static double medianCal(int  n,double in[])
-{
-    double m=0;	
-    if(n%2==1)
-    {
-        m=in[((n+1)/2)-1];  
-    }
-    else
-    {
-        m=(in[n/2-1]+in[n/2])/2; 
-    }
-    return m;
-}
-
-
-static substract(string problems, string satyam_life){
-
-    return satyam_life-problems;
-}
-
-
-static int mode(int a[],int n) {
-    int maxValue = 0, maxCount = 0, i, j;
-
-    for (i = 0; i < n; ++i) {
-       int count = 0;
-       for (j = 0; j < n; ++j) {
-          if (a[j] == a[i])
-          ++count;
-       }
-
-       if (count > maxCount) {
-          maxCount = count;
-          maxValue = a[i];
-       }
-    }
-    return maxValue;
- }
-
  public static void main(String args[]){
     int n = 5;
     int a[] = {0,6,7,2,7};
