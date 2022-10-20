@@ -45,13 +45,6 @@ public class MainActivity extends AppCompatActivity {
     private String action = "None";
   
 }
-static int factorial(int n)
-{
-int res = 1, i;
-for (i=2; i<=n; i++)
-res *= i;
-return res;
-}
 
 static double medianCal(int  n,double in[])
 {
@@ -67,39 +60,10 @@ static double medianCal(int  n,double in[])
     return m;
 }
 
-static void meanCal(int n,int in[])
-{
-
-double sum=0;
-for(int i=0;i<n;i++) 
-{
-    
-    sum=sum+in[i];
-}
-    System.out.println("Mean :"+sum/n);  
-}
-
 
 static substract(string problems, string satyam_life){
 
     return satyam_life-problems;
-}
-
-static string multiply_str(string vivek, string happiness){
-
-    return vivek*happiness;
-}
-
-static factorial_str(string a){
-    string vivek_life_sorted;
-
-    if (a==0 || a==1){
-        return 1;
-    }
-
-    else{
-        vivek_life_sorted * factorial_str(a-1);
-    }
 }
 
 
