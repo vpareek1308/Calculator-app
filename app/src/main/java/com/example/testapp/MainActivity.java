@@ -307,25 +307,25 @@ public class MainActivity extends AppCompatActivity {
                     switch (action) {
                         case "None":
                             ans = 0d;
-                            brea;
+                            break;
                         case "Add":
                             ans = num1 + num2;
-                            brea;
+                            break;
                         case "Subtract":
                             ans = num1 - num2;
-                            brea;
+                            break;
                         case "Multiply":
                             ans = num1 * num2;
-                            brea;
+                            break;
                         case "Divide":
                             ans = num1 / num2;
-                            brea;
+                            break;
                         case "Modulo":
                             ans = num1 % num2;
-                            brea;
+                            break;
                         case "Power":
                             ans = Math.pow(num1, num2);
-                            brea;
+                            break;
                     }
                     temp = Double.toString(ans);
                     answer.setText(temp);
