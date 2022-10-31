@@ -309,13 +309,13 @@ public class MainActivity extends AppCompatActivity {
                             ans = 0d;
                             break;
                         case "Add":
-                            ans = num1 + num2;
+                            ans = num2+ num1;
                             break;
                         case "Subtract":
                             ans = num1 - num2;
                             break;
                         case "Multiply":
-                            ans = num1 * num2;
+                            ans = num2 * num1;
                             break;
                         case "Divide":
                             ans = num1 / num2;
